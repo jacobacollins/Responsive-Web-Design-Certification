@@ -1,7 +1,12 @@
 <html>
 <style>
-html,body{}
+html,body{
+    text-align: center;
+}
 
+.input-label{
+
+}
 #title{}
 
 #description{}
@@ -24,8 +29,32 @@ html,body{}
 </style>
 
 <body>
+    <div>
+    <h1 id="title">Survey Form</h1>
+    </div>
 
-
+    <div>
+        <form id ="survey-form">
+            <div>
+            <label id = "name-label" class="input-label">Name</label>
+            </div>
+                <div>
+                    <input id ="name" type="text" placeholder="Enter your name"><br>
+                </div>
+            <div>
+            <label id = "number-label" class="input-label">Age:</label>
+            </div>
+                <div>
+                    <input id="number" type="number" min="13" max="40" placeholder="Enter your age"><br>
+                </div>
+            <div>
+            <label id = "email-label" class="input-label">Email:</label>
+            </div>
+                <div>
+                <input id ="email" type="email" placeholder="Enter your email."><br>
+                </div>
+        </form>
+    </div>
 
 
 
