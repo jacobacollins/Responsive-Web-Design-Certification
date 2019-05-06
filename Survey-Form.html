@@ -2,12 +2,39 @@
 <style>
 html,body{
     text-align: center;
+    background-color: darkgrey;
 }
 
-.input-label{
+.survey-label{
+    text-align: left;
+    font-size: 20px;
+    display:inline-block;
+    padding: 10px;
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
 
 }
-#title{}
+
+.input-field{
+    text-align: left;
+    display: inline-block;
+    width: 45%;
+    margin: 5px;
+
+}
+#outer-form{
+    background-color:darkgrey;
+}
+
+#inner-form{
+    background-color:white;
+    margin: 5%;
+    padding: 5%;
+}
+
+#title{
+    font-size: 40px;
+}
 
 #description{}
 
@@ -29,32 +56,78 @@ html,body{
 </style>
 
 <body>
-    <div>
-    <h1 id="title">Survey Form</h1>
-    </div>
+<div id = "outer-form">
+    
 
-    <div>
+    <div id = "inner-form">
+            <div>
+                    <h1 id="title">Survey Form</h1>
+            </div>
         <form id ="survey-form">
             <div>
-            <label id = "name-label" class="input-label">Name</label>
+            <label id = "name-label" class="survey-label">Name</label>
             </div>
                 <div>
-                    <input id ="name" type="text" placeholder="Enter your name"><br>
+                    <input id ="name" type="text" class="input-field" placeholder="Enter your name"><br>
                 </div>
             <div>
-            <label id = "number-label" class="input-label">Age:</label>
+            <label id = "number-label" class="survey-label">Age:</label>
             </div>
                 <div>
-                    <input id="number" type="number" min="13" max="40" placeholder="Enter your age"><br>
+                    <input id="number" class="input-field" type="number" min="13" max="40" placeholder="Enter your age"><br>
                 </div>
             <div>
-            <label id = "email-label" class="input-label">Email:</label>
+            <label id = "email-label" class="survey-label">Email:</label>
             </div>
                 <div>
-                <input id ="email" type="email" placeholder="Enter your email."><br>
+                <input id ="email" class = "input-field" type="email" placeholder="Enter your email."><br>
                 </div>
+            <div>
+                <div class="survey-label">
+                How satisfied are you with my work?<br>
+                </div>
+                <select name="dropdown">
+                    <option value="Very Much">Very Much</option>
+                    <option value = "Not Impressed">Not Impressed</option>
+                    <option value = "Needs Work">Needs Work</option>
+                </select>
+            </div>
+            <div>
+                <div class="survey-label">
+                How likely are you to recommend my services in the future?<br>
+                </div>
+                <input type ="radio" name="recommendation" value="Very Likely">Very Likely<br>
+                <input type ="radio" name = "recommendation" value="Somewhat Likely"> Somewhat Likely<br>
+                <input type ="radio" name = "recommendation" value="Not at All">Not at all<br>
+            </div>
+            
+            <div>
+                <br>
+                <div class="survey-label">
+                If any of these aspects of my services stood out to you, please check the corresponding box<br>
+                </div>
+                <input type="checkbox" name="serviceAspects" value = "timeliness">Timeliness<br>
+                <input type="checkbox" name="serviceAspects" value = "quality of service">Quality of Service<br>
+                <input type="checkbox" name="serviceAspects" value = "good attitude">Good Attitude<br>
+                <input type="checkbox" name="serviceAspects" value = "attention to detail">Attention to Detail<br>
+                <input type="checkbox" name="serviceAspects" value = "Price">Price<br><br>
+
+            </div>
+
+            <div>
+                <div class="survey-label">
+                Any additional comments about your experience would be greatly welcomed and will be taken into consideration<br>
+                </div>
+                <textarea rows = "10" cols = "50" name ="comments"> Additional Comments...</textarea>
+                <br>
+            </div>
+
+            <div>
+                <input type="submit" value="submit">
+            </div>
         </form>
     </div>
+</div>
 
 
 
