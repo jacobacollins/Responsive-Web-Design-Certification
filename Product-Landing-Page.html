@@ -3,7 +3,7 @@
 <style>
 
 body,html{
-    background-color: darksalmon;
+    background-color:dimgray;
     margin: 5px;
     padding: 5px;
 }
@@ -14,16 +14,25 @@ div{
 }
 
 #header{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
 }
 
 #header-img{}
 
 #nav-bar{}
 
-.nav-link{}
+.nav-link{
+    width: 10%;
+    height: 40px;
+}
 
-#video{}
+#video{
+    align-content: center;
+    margin: 30px;
+    border:  5px solid black;
+}
 
 #form{}
 
@@ -38,11 +47,16 @@ div{
 
     <div>
         <header id= "header">
-        <h1>Product Landing Page</h1>
-        <img src="#" id="header-img" alt="Product Display">
+            <img src="#" id="header-img" alt="Product Display">
+            <h1>Product Landing Page</h1>
         
-        <nav class="nav-bar">
-
+        
+        <nav id="nav-bar">
+            <ul>
+                <li class="nav-link" href="#">Link 1</li>
+                <li class="nav-link" href="#">Link 2</li>
+                <li class="nav-link" href="#">Link 3</li>
+            </ul>
         </nav>
 
         </header>
@@ -56,8 +70,8 @@ div{
 
     <div id="form-div">
         <form id="form">
-
-            <input type="submit" id="submit">
+            <input id="email" type="email" placeholder="Enter your email here">
+            <input type="submit" id="submit" value="submit">
         </form>
     </div>
 
