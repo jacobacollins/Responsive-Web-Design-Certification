@@ -3,10 +3,10 @@
 <style>
 
 body,html{
-    background-color:dimgray;
+    background-color:#eee;
     margin: 5px;
     padding: 5px;
-    align: center;
+    text-align: center;
 }
 
 div{
@@ -16,26 +16,48 @@ div{
 
 #header{
     display: flex;
+    /* border: solid 1px black; */
     flex-direction: row;
     height: 150px;
+    
+}
+
+#product-title{
+    /* margin:auto; */
+    margin-bottom: auto;
+    padding-left: 5%;
+    font-size: 40;
+    
 }
 
 #header-img{
-    margin: 20px;
+    
+    margin-right: auto;
+
+    
+   
 }
 
-#nav-bar{}
+#nav-bar{
+  
+    margin-left: auto;
+    margin-top: auto;
+    /* padding-right: 40px; */
+    padding-top: 10px;
+}
 
 .nav-link{
     display: inline-block;
-    width: auto;
-    height: 40px;
+    height: 50%;
+    margin: 10px;
+    font-size: 20;
 }
 
 #video{
-    align-content: center;
-    margin: 30px;
+    align-items: center;
+    margin: 100px;
     border:  5px solid black;
+    transform:scale(1.5);
 }
 
 #form{}
@@ -51,15 +73,15 @@ div{
 
     <div>
         <header id= "header">
-            <img src="#" id="header-img" alt="Product Display">
-            <h1>Product Landing Page</h1>
+            <img src="product.jpg" id="header-img" alt="Product Display">
+            <h1 id="product-title">Product Landing Page</h1>
         
         
         <nav id="nav-bar">
             <ul>
-                <li class="nav-link" href="#">Link 1</li>
-                <li class="nav-link" href="#">Link 2</li>
-                <li class="nav-link" href="#">Link 3</li>
+                <li class="nav-link" href="#">Features</li>
+                <li class="nav-link" href="#">How it Works</li>
+                <li class="nav-link" href="#">Pricing</li>
             </ul>
         </nav>
 
@@ -68,7 +90,7 @@ div{
 
     <div id="video-div">
 
-        <video id="video" src="#"></video>
+        <iframe id="video" src="https://www.youtube.com/embed/2YBtspm8j8M"></iframe>
 
     </div>
 
