@@ -14,10 +14,14 @@ div{
     margin: 5px;
     padding: 5px;
 }
-
+a{  text-decoration: none;}
+a:link { color: black; }
+a:visited { color: black; }
+a:hover { color: rgb(128, 123, 123); }
+a:active { color: rgb(128, 123, 123); }
 #header{
     display: flex;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     flex-direction: row;
     height: 150px;
     background-color: #b0c4de;
@@ -27,8 +31,9 @@ div{
 #product-title{
     
     margin-bottom: auto;
-    padding-left: 12%;
+    padding-left: 10%;
     font-size: 40;
+    color: rgb(39, 37, 37);
     
 }
 
@@ -54,11 +59,13 @@ div{
     padding: 5px;
     font-size: 20;
     background-color: #eee;
+    /* border-radius: 30px; */
 }
 
 #video{
     align-items: center;
     margin: 30px;
+    margin-bottom: 10px;
     border:  5px solid black;
     width: 40%;
     height: 60%;
@@ -73,10 +80,30 @@ div{
 
 #form{}
 
-#email{}
+#email{
+    width: 200px;
+    text-align: center;
+}
 
 #submit{}
 
+#product-details{
+    background-color:rgba(176, 196, 222, 0.952);
+    margin: 10px;
+    padding: 5px;
+}
+
+.product-details-titles{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.product-details-description{
+    margin-right: 30%;
+    margin-left: 30%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 </style>
 
@@ -90,9 +117,9 @@ div{
         
         <nav id="nav-bar">
             <ul>
-                <li class="nav-link" href="#">Features</li>
-                <li class="nav-link" href="#">How it Works</li>
-                <li class="nav-link" href="#">Pricing</li>
+                <li class="nav-link"><a href="#product-description-title">Features</li>
+                <li class="nav-link"><a href="#product-shipping-title">How it Works</li>
+                <li class="nav-link"><a href="#product-preorder-title">Pricing</li>
             </ul>
         </nav>
 
@@ -103,18 +130,51 @@ div{
 
         <iframe id="video" src="https://www.youtube.com/embed/2YBtspm8j8M"></iframe>
 
-    </div>
+    
 
     <div id="form-div">
         <form id="form">
-            <input id="email" type="email" placeholder="Enter your email here">
+            <input id="email" type="email" placeholder="Enter your email for Pre-Order">
             <input type="submit" id="submit" value="submit">
         </form>
     </div>
 
-    
+    </div>
 
-
+    <div id="product-details">
+        <div id="product-description">
+            <div class="product-details-titles"><a name="product-description-title">
+                Product Description
+                </a>
+            </div>
+            <div class="product-details-description">
+                Write a great product description here that talks about how fantastic
+                your product is and how unique it is. Be sure to attract buyers with 
+                what makes your product stand apart from the rest.
+            </div>
+        </div>
+        <div id="product-shipping">
+            <div class="product-details-titles" ><a name="product-shipping-title">
+                Product Shipping
+                </a>
+            </div>
+            <div class="product-details-description">
+                Write an interesting and promising description about the estimated shipping 
+                deadline and when the customer can assume to have the product.
+            </div>
+        </div>
+        <div id="product-preorder">
+            <div class="product-details-titles" ><a name="product-preorder-title">
+                Product Pre-Order
+                </a>
+            </div>
+            <div class="product-details-description">
+                What does the customer get by preordering that they wouldn't otherwise?
+                This is the place to answer those questions. Maybe tell them that they get
+                exclusive features, content, or a discounted price.
+            </div>
+        </div>
+    </div>
 
 
 
