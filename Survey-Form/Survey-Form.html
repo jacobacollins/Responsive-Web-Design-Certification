@@ -71,20 +71,22 @@ html,body{
 
 </style>
 
-<body>
+
+  <body>
 <div id = "outer-form">
     
 
     <div id = "inner-form">
             <div>
                     <h1 id="title">Freelance Questionaire Form</h1>
+              <p id="description"> Form for freelance work evaluation</p>
             </div>
         <form id ="survey-form">
             <div>
             <label id = "name-label" class="survey-label">Name</label>
             </div>
                 <div>
-                    <input id ="name" type="text" class="input-field" placeholder="Enter your name"><br>
+                    <input id ="name" type="text" class="input-field" placeholder="Enter your name" /required><br>
                 </div>
             <div>
             <label id = "number-label" class="survey-label">Age:</label>
@@ -96,7 +98,7 @@ html,body{
             <label id = "email-label" class="survey-label">Email:</label>
             </div>
                 <div>
-                <input id ="email" class = "input-field" type="email" placeholder="Enter your email."><br>
+                <input id ="email" class = "input-field" type="email" placeholder="Enter your email." /required><br>
                 </div>
             <div>
                 <div class="survey-label">
@@ -143,13 +145,13 @@ html,body{
                 Any additional comments about your experience would be greatly welcomed and will be taken into consideration<br>
                 </div>
                 <div>
-                <textarea rows = "10" cols = "50" name ="comments" placeholder=" Additional Comments..."></textarea>
+                <textarea rows = "10" cols = "50" name ="comments"> Additional Comments...</textarea>
                 </div>
                 <br>
             </div>
 
             <div>
-                <input type="submit" value="submit">
+                <input type="submit" id="submit" value="submit">
             </div>
         </form>
     </div>
