@@ -21,16 +21,26 @@
                 <p>
                     One of the most important aspects of coding in Haskell is the function definiton
                     <br>They are useful because they
-                    <ol>
+                    <ul>
                         <li>Tell you what data type each argument is assumed to be and what the output will be</li>
-                        <code></code>
-                        <li>Define you functions operations</li>
-                        <code></code>
-                    </ol>
+                        <li>Define your functions operations</li>
+                        <code>
+                            add' :: Integer -> Integer -> Integer <br>
+                            add' x x' = x + x'
+                        </code>
+                            <li>This first line shows how the first two arguments will be integer, with the end result also being an expected integer</li>
+                            <code>add' :: Integer -> Integer -> Integer</code>
+                        <li>This second line is the function operation</li>
+                        <code>
+                                add' x x' = x + x'
+                        </code>
+                    </ul>
                 </p>
 
                 <p>
-                    <!-- Fill in -->
+                    Without a proper function definition you will return a error that tells you an expected type (what is in your
+                    function definition) and the actual type (the argument you are trying to pass). <br>
+                    Avoid this by always making sure you are clear on your data types.
                 </p>
             </section>
 
@@ -39,11 +49,27 @@
                     Using Lists
                 </header>
                 <p>
-                    <!-- fill in 3  -->
+                    Learning to use lists in Haskell is foundational to the recursive definitions you will be writing
+                    <br>
+                    Typical syntax that is used looks like this (x:xs), where x is the head element of a list and xs is the the tail.
+                    <br>
+                    Lets look at an example of this usage
+                    <br>
+                    <code>
+                    sumLists' :: [a] -> a <br>
+                    sumLists' [] = 0 <br>
+                    sumLists' (x:xs) = x + sumLists' (xs)<br>
+                    </code>
+
                 </p>
 
                 <p>
-                    <!-- fill in 4 -->
+                        If we look at the third line
+                        <br><code>sumLists' (x:xs) = x + sumLists' (xs)</code><br>
+                        ignoring the rest of the meaning (for now), we can see that to sum a list of numbers
+                        we add the first element to the rest of the list and repeat this process until the list is empty (base case).
+    
+                        <br><br> This shows the recursive nature of Haskell functions
                 </p>
             </section>
 
@@ -52,11 +78,18 @@
                     Base Case (Empty Lists)
                 </header>
                 <p>
-                    <!-- fill in 5 -->
+                    When using Lists it is important to have a terminating case, known as the base case.<br>
+                    This will make sure your program isn't recursing indefitely and crashing.
                 </p>
 
                 <p>
-                    <!-- fill in 6 -->
+                    Using the example above we can look at the second line.
+                    <br>
+                    <code>
+                        sumLists' [] = 0 <br>
+                    </code>
+                    This line has a base case that matches the data type of the given argument [a] and returns a result of a. <br>
+                    This makes it so an empty list is translatable to a terminating case.
                 </p>
             </section>
 
@@ -66,11 +99,22 @@
                 </header>
 
                 <p>
-                    <!-- fill in 7 -->
+                    You'll run into many different kinds of data types while programming in Haskell, <br>
+                    but there might be times that you want to create your own, like when building data structures.
                 </p>
 
                 <p> 
-                    <!-- fill in 8 -->
+                    To do this you must 
+                    <ul>
+                    <li>use the data keyword followed by the name of the data type </li>
+                     <li> the type of the arguments</li>
+                    </ul>
+                    For example if we wanted to make a data type for a 4x4 matrix we would do the follwing <br>
+                    <code>
+                    data fourMatrix = Int Int Int Int<br>
+                    </code>
+                    This shows that for data type fourMatrix you will need 4 ints, one four each quadrant.
+                    
                 </p>
             </section>
             
@@ -79,11 +123,20 @@
                     Using the Prelude Library
                 </header>
                 <p>
-                    <!-- fill in 9 -->
+                    One of the most important libraries you will utilize in Haskell is the Prelude library.
+                    <br> You don't need to import prelude as it is automatically imported for you unless you choose not to (NoImplicitPrelude). 
                 </p>
 
                 <p>
-                    <!-- fill in 10 -->
+                    You'll find all sorts of useful things in Prelude like
+                    <ul>
+                        <li>Folds</li>
+                        <li>Mapping</li>
+                        <li>Zipping/UnZipping</li>
+                        <li>Exception Handling</li>
+                    </ul>
+                    What you can do by combining functions in the Haskell Prelude library is almost endless.<br>
+                    Now that you have the basic tools at your disposal, go out there and start exploring Haskell.
                 </p>
             </section>
         </main>
