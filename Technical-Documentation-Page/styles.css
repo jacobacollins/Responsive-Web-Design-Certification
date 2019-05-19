@@ -1,28 +1,65 @@
 body,html{
-
+    min-width: 240px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #wrapper{
-
+ margin-left: 260px;
 }
-
+#navbar-header{
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+}
 #main-doc{
-
+    position: absolute;
+    margin-left:0px;
+    padding:20px;
+    margin-bottom:110px;
 
 }
 
+.section-title{
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+code{
+    background-color: lightgray;
+    line-height: 2;
+    position: relative;
+    
+  
+    
+}
+p{
+    margin-left: 50px;
+}
 .main-section{
 
 }
 
 #navbar{
-
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 250px;
+    border: solid black 1px;
 }
 
 .nav-link{
 
 }
+#navbar ul{
+
+}
+
+#navbar li{
+    
+}
 
 @media (max-width:700px){
-
 }

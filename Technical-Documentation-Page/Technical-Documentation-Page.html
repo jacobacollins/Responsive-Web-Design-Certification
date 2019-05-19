@@ -2,7 +2,7 @@
 <link href="styles.css" rel="stylesheet" type="text/css">
 <body>
     <nav id="navbar">
-        <header>Haskell Documentation</header>
+        <header id="navbar-header">Haskell Documentation</header>
         <ul>
         <a class="nav-link" href="#function_definition" rel="internal">         <li>Function Definition</li></a>
         <a class="nav-link" href="#using_lists" rel="internal">                 <li>Using Lists</li></a>
@@ -15,7 +15,7 @@
         <main id="main-doc">
 
             <section class="main-section" id="function_definition">
-                <header>
+                <header class="section-title">
                     Function Definition 
                 </header>
                 <p>
@@ -45,7 +45,7 @@
             </section>
 
             <section class="main-section" id="using_lists">
-                <header>
+                <header class="section-title">
                     Using Lists
                 </header>
                 <p>
@@ -74,7 +74,7 @@
             </section>
 
             <section class="main-section" id="base_case_(Empty_Lists)">
-                <header>
+                <header class="section-title">
                     Base Case (Empty Lists)
                 </header>
                 <p>
@@ -94,7 +94,7 @@
             </section>
 
             <section class="main-section" id="creating_data_types">
-                <header>
+                <header class="section-title">
                     Creating Data Types
                 </header>
 
@@ -109,17 +109,19 @@
                     <li>use the data keyword followed by the name of the data type </li>
                      <li> the type of the arguments</li>
                     </ul>
-                    For example if we wanted to make a data type for a 4x4 matrix we would do the follwing <br>
+                </p>
+                <p>
+                    For example if we wanted to make a data type for a 4x4 matrix we would do the following <br>
                     <code>
                     data fourMatrix = Int Int Int Int<br>
                     </code>
-                    This shows that for data type fourMatrix you will need 4 ints, one four each quadrant.
+                    This shows that for data type fourMatrix you will need 4 ints, one for each quadrant.
                     
                 </p>
             </section>
             
             <section class="main-section" id="using_the_prelude_library">
-                <header>
+                <header class="section-title">
                     Using the Prelude Library
                 </header>
                 <p>
