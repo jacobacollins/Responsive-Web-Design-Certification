@@ -1,5 +1,6 @@
 html,body{
-
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #wrapper{
@@ -7,16 +8,65 @@ html,body{
 }
 
 #welcome-section{
-
+    text-align: center;
+    margin-top: 45%;
 }
 
-.project-title{
 
+#name{
+    text-align: center;
+    font-size: 40;
+    font-weight: 100;
+    
 }
 
-#navbar{
-
+#name-secondary{
+    margin: -15px;
+    display: inline-block;
 }
+
+
+
+
+
+ #navbar ul {
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    height: 40px;
+    top: 0;
+    right: 0;
+  }
+  
+  #navbar ul li {
+    display: inline-block;
+    margin: 45px;
+    margin-top: 15px;
+  }
+  
+  #navbar ul li a {
+    color: #008080;
+    text-decoration: none;
+  }
+
+    .project{
+        
+    }
+
+  #projects{
+      background-color: #e2c7c7;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding-top:5px;
+      padding-bottom:5px;
+  }
+  .project-title{
+    font-size: 24;
+    font-weight: 100;
+}
+
+
 
 #profile-link{
 
