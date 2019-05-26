@@ -1,79 +1,105 @@
-html,body{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+html,
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#wrapper{
-
+#wrapper {
 }
 
-#welcome-section{
-    text-align: center;
-    margin-top: 45%;
+#welcome-section {
+  text-align: center;
+
+  height:100vh;
 }
 
+#name {
+  text-align: center;
+  font-size: 40;
+  font-weight: 100;
+  padding-top: 20%;
+}
 
-#name{
+#name-secondary {
+  margin: -15px;
+  display: inline-block;
+}
+#navbar{
+  top: 0;
+  right: 0;
+  position: fixed;
+}
+
+#navbar ul {
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  height: 40px;
+  top: 0;
+  right: 0;
+  margin-top: 0;
+}
+
+#navbar ul li {
+  display: inline-block;
+  margin: 45px;
+  margin-top: 15px;
+}
+
+#navbar ul li a {
+  color: #008080;
+  text-decoration: none;
+}
+
+.project {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  overflow: hidden;
+  border: 2px solid black;
+  height: 240px;
+  width: 280px;
+  margin: 40px 100px;
+}
+
+.project-pic {
+  width: 100%;
+  height: 200px;
+  border-bottom: 1px solid black;
+}
+
+#projects {
+  background-color: #e2c7c7;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.project-title {
+  font-size: 24;
+  font-weight: 100;
+}
+
+#profile-link {
+}
+
+@media only screen and (max-width: 750px) {
+  nav ul li {
+    margin: 20px;
+  }
+  .project {
+    margin: 40px 0;
+  }
+  #name {
     text-align: center;
     font-size: 40;
     font-weight: 100;
-    
-}
-
-#name-secondary{
+    padding-top: 25%;
+  }
+  
+  #name-secondary {
     margin: -15px;
     display: inline-block;
-}
-
-
-
-
-
- #navbar ul {
-    text-align: right;
-    position: fixed;
-    width: 100%;
-    background-color: #ffffff;
-    height: 40px;
-    top: 0;
-    right: 0;
   }
-  
-  #navbar ul li {
-    display: inline-block;
-    margin: 45px;
-    margin-top: 15px;
-  }
-  
-  #navbar ul li a {
-    color: #008080;
-    text-decoration: none;
-  }
-
-    .project{
-        
-    }
-
-  #projects{
-      background-color: #e2c7c7;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      padding-top:5px;
-      padding-bottom:5px;
-  }
-  .project-title{
-    font-size: 24;
-    font-weight: 100;
-}
-
-
-
-#profile-link{
-
-}
-
-@media only screen and (max-width:750px) {
-
-
-    
 }
